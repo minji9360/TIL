@@ -1,4 +1,5 @@
-# cd /life/development_master
+# cd /life/development/master
+#### 성취 = 재능 * 노력^2  
 어느 날 하루 기울이는 노력보다 다음 날, 그다음 날도 눈을 뜨면 코드를 작성할 각오가 되어 있는 것이 더 중요하다.  
 
 [repository]: https://github.com/rundocs/jekyll-rtd-theme

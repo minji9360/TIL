@@ -1,7 +1,6 @@
 ---
-sort: 2
+sort: 1
 ---
-
-# Language
+# EVERYDAY
 
 {% include list.liquid all=true %}
