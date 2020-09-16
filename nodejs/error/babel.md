@@ -1,4 +1,4 @@
-# BABEL  
+# Babel  
 ## Requires Babel "버전", but was loaded with "버전"  
 ```
 [BABEL] src/app.js: Requires Babel "^7.0.0-beta.41", but was loaded with "7.0.0-beta.3". You'll need to update your @babel/core version.   
@@ -78,7 +78,7 @@ To https://git.heroku.com/still-sierra-36389.git
 error: failed to push some refs to 'https://git.heroku.com/still-sierra-36389.git'
 ```
 
-## 상황  
+### 상황  
 유튜브 클론코딩(#11.6 Deploying to Heroku part One) 실습 중 heroku 배포를 위해 주소를 git remote에 추가한 후 `git push heroku master` 실행했더니 해당 오류가 발생했다.  
 마지막 에러 메시지(remote rejected)를 보고 다른 프로젝트를 진행할 때 동일한 오류를 봤어서 같은 문제라고 생각해서 다음과 같은 시도를 했다.  
 1. __git pull__ 혹은 __git clone__으로 local의 파일과 github에 있는 파일을 맞춰준다.  
@@ -90,7 +90,7 @@ error: failed to push some refs to 'https://git.heroku.com/still-sierra-36389.gi
 push가 실패하는 것은 결과고, 가장 위에서부터 내려오면서 에러를 해결해야겠다는 생각을 했기 때문이다.  
 다시 찬찬히 보니 @babel/core의 버전과 관련된 에러라는 사실을 깨달았고 관련 시도들로 해결했다.  
 
-## 해결  
+### 해결  
 1. package.json에서 devDependencies에 있는 babel 관련 내용 dependencies로 이동
 2. __npm i @babel/core @babel/preset-env__  
 3. __npm i babel-loader@next__  
