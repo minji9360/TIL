@@ -8,6 +8,7 @@ __소프트웨어__
 - 시스템 소프트웨어 : 운영체제(Windows, Unix, Linux), 컴파일러
 - 응용 소프트웨어 : 엑셀, 파워포인트, 게임 등
 
+<br/>
 ## 중앙처리장치  
 = CPU (Central Processing Unit)  
 = 마이크로 프로세서  
@@ -27,21 +28,28 @@ __소프트웨어__
 ![CPU_내부](https://t1.daumcdn.net/cfile/tistory/1351F51F4C916CBD48)  
 <span style="color: gray">출처 : https://lomars.tistory.com/entry/CPU%EA%B5%AC%EC%A1%B0</span>
 
-## 주기억장치  
-- 주기억장치
-	- 고속
-	- 고가
-	- 소용량
-	- CPU가 직접 접근해서 명령이나 데이터를 가져갈 수 있음
-	- RAM, ROM, ~~자기코어~~ 과거
-- 보조기억장치
-	- 저속
-	- 저가
-	- 대용량
-	- CPU가 직접 접근하지 않고 보조기억장치의 데이터를 주기억장치에 옮겨서 CPU로 전달
-	- 하드디스크, DVD-ROM, 플래시메모리 등 RAM과 ROM을 제외한 모든 기억장치
+<br/>
+## 기억장치
+### 메모리 계층 구조  
+![메모리계층구조](https://i.pinimg.com/originals/27/5d/84/275d840f795a089fded787df22ffb3b2.jpg)
+- 레지스터 : CPU 내부에 있는 가장 빠른 메모리
+- 연관기억장치 : 캐시기억장치를 활용할 때, 주소값이 아니라 내용으로 빠르게 찾는 방식
+- 캐시기억장치 : SRAM으로, 속도가 빠름
+- 주기억장치 : DRAM으로, 속도가 느림
+- 보조기억장치  
 
-### ROM (Read Only Memory)
+※ 레지스터와 캐시기억장치는 하드웨어적으로 같다. (Flip-Flop 회로 구조)  
+어떤 용도로 사용되는지가 다른 것  
+
+### 주기억장치  
+- 고속
+- 고가
+- 소용량
+- CPU가 직접 접근해서 명령이나 데이터를 가져갈 수 있음
+- RAM, ROM, ~~자기코어~~ 과거
+
+
+#### ROM (Read Only Memory)
 __ROM__
 - 읽기 전용 기억장치
 - 비휘발성 기억장치  
@@ -62,7 +70,7 @@ __EP ROM__
 __EEP ROM__
 - 전기적인 방법을 이용해 메모리를 여러번 수정 가능  
 
-### RAM (Random Access Memory)
+#### RAM (Random Access Memory)
 - 읽고 쓰기가 자유로움
 - 휘발성 기억장치
 - 현재 실행 중인 program과 data를 임시 저장  
@@ -71,7 +79,19 @@ __EEP ROM__
 ![DRAM_SRAM_차이](https://t1.daumcdn.net/cfile/tistory/23076C42572D226839)  
 <span style="color:gray">출처 : https://nyamtutorial.tistory.com/61</span>  
 
-### 자기코어
+#### 자기코어
 - 전류 일치 기술
 - 파괴성 (DRO : Destruction Read Out) 메모리
-- 자료 읽은 후 재저장 필요
+- 자료 읽은 후 재저장 필요  
+
+<br/>
+### 보조기억장치  
+- 저속
+- 저가
+- 대용량
+- CPU가 직접 접근할 수 없다.  
+- 보조기억장치의 데이터를 주기억장치에 옮겨서 CPU로 전달
+- RAM과 ROM을 제외한 모든 기억장치  
+(하드디스크, DVD-ROM, 플래시메모리 등)  
+
+
