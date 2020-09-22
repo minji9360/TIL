@@ -1,4 +1,4 @@
-# Babel  
+# babel  
 ## Requires Babel "버전", but was loaded with "버전"  
 ```
 [BABEL] src/app.js: Requires Babel "^7.0.0-beta.41", but was loaded with "7.0.0-beta.3". You'll need to update your @babel/core version.   
@@ -92,6 +92,8 @@ push가 실패하는 것은 결과고, 가장 위에서부터 내려오면서 �
 
 ### 해결  
 1. package.json에서 devDependencies에 있는 babel 관련 내용 dependencies로 이동
+--production 빌드 시 devDependencies에 있는 plugin들은 포함되지 않는다.  
+(devDependencies에는 개발자만 사용할 것들만 있어야 함. eslint나 nodemon, prettier 등)  
 2. __npm i @babel/core @babel/preset-env__  
 3. __npm i babel-loader@next__  
 4. babel 삭제 후 재설치, npm 재설치  
@@ -99,12 +101,12 @@ push가 실패하는 것은 결과고, 가장 위에서부터 내려오면서 �
 ※ 시도 후에는 꼭 commit 후 push ※  
 
 ```javascript
-/* before */
+/* .babelrc before */
 {
 	"presets": ["@babel/preset-env"]
 }
 
-/* after */
+/* .babelrc after */
 {
 	"presets": [
 		["@babel/preset-env", 
@@ -129,4 +131,18 @@ npm과 babel의 버전은 6.xx으로 나오는데, 왜 7.0.0-0이 문제라고 �
 <br/>
 heroku 오류인 줄 알았는데 역시 오류는 처음부터 끝까지 잘 살펴보고 가장 위에서부터 내려오면서 해결해야 한다.  
 위에서 난 오류의 결과로 뒤의 오류들이 발생할 수 있다.  
+<br/>
+
+## 'babel-node'은(는) 내부 또는 외부 명령, 실행할 수 있는 프로그램, 또는 배치 파일이 아닙니다.  
+
+### 상황  
+챌린지용 디렉토리를 생성하고 day 5 챌린지 완료 후 테스트를 위해 npm start를 실행했더니 해당 오류가 발생했다. (start script는 `nodemone --exec babel-node src/index.js`)
+1. __npm i babel-node__  
+2. __npm i @babel/node__  
+3. __npm i babel-node -g__
+
+### 해결  
+1. __npm i @babel/core__  
+2. __npm i @babel/node__  
+3. __npm i @babel/preset-env__  
 
