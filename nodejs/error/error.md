@@ -1,4 +1,4 @@
-# Erro황r  
+# Error  
 ## Cannot find module '파일'  
 ```
 internal/modules/cjs/loader.js:968
@@ -28,3 +28,19 @@ src 폴더 바깥에 있던 controllers 폴더와 routers 폴더를 src 폴더 �
 
 ### 해결  
 controllers, routers 폴더가 포함된 __경로 수정__
+
+
+## no such file or directory, open '경로\package.json'  
+```
+error code ENOENT
+error syscall open
+error path C:\Users\MINJI\youtube_challenge\package.json
+error errno -4058
+error enoent ENOENT: no such file or directory, open 'C:\Users\MINJI\youtube_challenge\package.json'
+error enoent This is related to npm not being able to find a file.
+```
+
+### 상황  
+챌린지 과제를 위해 새 폴더에서 npm start를 실행했더니 해당 오류가 발생했다.  
+### 해결  
+작업 관리자에서 nodejs가 실행되고 있는지 확인하고, 실행 중이라면 종료 후 재시작
