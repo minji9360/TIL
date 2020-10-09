@@ -1,0 +1,70 @@
+# 기본
+## 입출력 스트림  
+### \<iostream>
+#### 출력
+```cpp
+#include <iostream>
+
+int main()
+{
+	int a;
+	int x = 1024;
+	double pi = 3.141592;
+
+	std::cout << "I love this lecture!";
+	std::cout << "x is " << x << " pi is " << pi << std::endl;
+	std::cin >> a;
+	std::cout << "Your input is " << x << std::endl;
+	return 0;
+}
+```
+1. __std__  
+namespace(이름 공간, 명칭 공간)으로, std::cout 처럼 std::의 뒤에 오는 것들은 std 이름 공간 안에 정의가 되어 있고, 사용하기 위해서는 ::과 함께 사용한다.  
+`using namespace std`를 사용하면 사용한 곳부터 해당 함수의 마지막까지 std::를 떼고 cout만 사용 가능  
+컴파일러가 알아서 해주기 때문.  
+
+2. __cin__
+
+3. __cout__  
+
+4. __endl__  
+입력을 마쳤다, 줄의 끝이다, 줄을 바꿔달라는 의미
+얘가 없으면 \n으로 줄바꿈을 해야 함(둘이 정확히 같은 기능은 아님)  
+
+### 함수  
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int multiplyTwoNumbers(int num_a, int num_b)
+{
+	int sum = num_a * num_b;
+	
+	return sum;
+}
+
+int addTwoNumbers(int a, int b)
+{
+	return a + b;
+}
+
+void printHelloWorld()
+{
+	cout << "Hello World!" << endl;
+}
+
+int main()
+{
+	int sum = addTwoNumbers(1, 2);
+
+	cout << multiplyTwoNumbers(1, 2) << endl;
+	cout << sum << endl;
+
+	printHelloWorld();
+
+	return 0;
+}
+```
+함수 안에서 함수를 정의할 수 없다.  
+
