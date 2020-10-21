@@ -9,7 +9,7 @@ c++의 템플릿을 사용해 표준으로 정리되어 편리하게 사용할 �
 특별한 제약이나 규칙이 없는 가장 일반적인 컨테이너로, 데이터를 선형으로 저장하여 삽입된 요소의 순서가 유지된다.  
 
 - 요구사항  
-1. 몯느 요소가 직선 순서로 배치되어 있어야 한다.  
+1. 모든 요소가 직선 순서로 배치되어 있어야 한다.  
 
 2. 반복자가 최소한 순방향 반복자(forward iterator) 이상이어야 한다.  
 
@@ -61,12 +61,111 @@ copy(vc.begin(), vc.end(), ostream_iterator<int>(cout, " "));
 3. begin() : 컨테이너의 첫 번째 요소를 가리키는 반복자  
 4. end() : 컨테이너의 마지막 요소 바로 다음(past the end)를 가리키는 반복자  
 
+#### deque  
+##### 개념  
+양쪽에 끝이 있는 큐(queue)로, double-ended queue를 의미한다.  
+컨테이너 양 끝에서 요소를 빠르게 삽입/삭제할 수 있다.  
+vector 객체와 마찬가지로 임의 접근과 동적 크기의 장점을 가지며, vector로 할 수 없는 전방 삽입/삭제도 빠르게 수행할 수 있다.  
+
+##### 문법
+- 헤더 파일 : deque  
+
+- 문법
+```
+deque<템플릿_인수> 객체_이름(생성자_인수);
+```
+
+##### 예제  
+```c
+deque<int> dq = {20};	// deque 객체의 선언 및 초기화
+dq.push_back(30);		// 요소의 후방 삽입
+dq.push_front(10);		// 요소의 전방 삽입
+
+cout << "현재 데큐의 모든 요소 : " << endl;
+copy(dq.begin(), dq.end(), ostream_iterator<int>(cout, " "));
+cout << endl << "현재 첫 번째 요소 : " << dq.front() << endl;
+
+dq.pop_front();
+cout << "현재 데큐의 모든 요소 : " << endl;
+copy(dq.begin(), dq.end(), ostream_iterator<int>(cout, " "));
+```
+  
+사용된 STL 함수  
+1. push_front() : 컨테이너의 첫 번째 요소로 해당 데이터를 추가  
+2. front() : 컨테이너의 첫 번째 요소를 반환  
+3. pop_front() : 컨테이너의 첫 번째 요소를 삭제
+
 
 #### list  
+##### 개념  
+이중 연결 리스트(double linked list)의 클래스 템플릿 표현이라고 할 수 있다.  
+모든 요소에서 양방향 접근과 빠른 삽입/삭제가 가능하나, 임의 접근은 불가능하다.  
+구성하는 링크(link)는 포인터이기 때문에 특정 함수로 링크를 재배치하는 것으로 아주 빠르게 수행할 수 있다.
+장점 : 요소들의 빠른 삽입과 삭제  
 
-#### deque  
+##### 문법  
+- 헤더 파일 : list
+
+- 문법  
+```
+list<템플릿_인수> 객체_이름(생성자_인수);
+```
+
+- 함수  
+swap() : 두 요소의 위치를 서로 바꿈  
+reverse() : 리스트 전체 요소의 위치를 역순으로 변경  
+sort() : 리스트 전체 요소를 정렬  
+unique() : 같은 값이 인접해 있을 경우, 그 값들을 하나로 단일화  
+merge() : 두 정렬된 리스트를 합병  
+splice() : 두 리스트를 연결하거나, 한 쪽 리스트로 이동  
+
+##### 예제  
+```c
+list<int> ls = {1, 2, 3, 4, 3, 5, 5};	// list 객체의 선언 및 초기화  
+// ls.sort();	// 1, 2, 3, 4, 5  
+ls.unique();	// 1, 2, 3, 4, 3, 5  
+cout << "현재 리스트의 모든 요소 : " << endl;  
+copy(ls.begin(), ls.end(), ostream_iterator<int>(cout, " "));
+```
+
+unique 사용 전에 sort()를 사용해 정렬하면, 리스트 내의 모든 중복값을 제거할 수 있다.  
 
 #### forward_list
+##### 개념  
+단방향 연결 리스트(singly linked list)의 클래스 템플릿 표현이라고 할 수 있다.  
+C++11부터 추가되었으며, 모든 요소에서 순방향으로 접근할 수는 있으나 역방향으로 접근할 수는 없다.  
+따라서 순방향 리스트 컨테이너에는 순방향 반복자(forward iterator)만 사용한다.  
+
+리스트 객체와 비교시, 더 적은 메모리로 간편하게 사용할 수 있다는 장점이 있다.  
+
+##### 문법  
+```
+forward_list<템플릿_인수> 객체_이름(생성자_인수_;
+```  
+
+##### 예제  
+```
+forward_list<int> fls01 = {10, 20, 400, 30};	// forward_list 객체의 선언 및 초기화
+forward_list<int> fls02 = {40, 50};
+forward_list<int>::iterator itr;
+
+fls01.remove(400);		 // 값이 400인 모든 요소 삭제
+cout << "현재 순방향 리스트의 모든 요소" << endl;
+copy(fls01.begin(), fls01.end(), ostream_iterator<int>(cout, " "));
+cout << endl;
+
+itr = fls01.begin();		// fls01의 첫 번째 요소를 가리키도록 반복자를 초기화
+fls01.splice_after(itr, fls02);	//fls02의 모든 요소를 fls01의 첫 번째 요소 다음에 삽입
+cout << "fls01: " ;
+copy(fls01.begin(), fls01.end(), ostream_iterator<int>(cout, " "));
+cout << endl << "fls02 : ";
+copy(fls02.begin(), fls02.end(), ostream_iterator<int>(cout, " "));
+```
+사용된 stl 함수  
+1. remove() : 전달된 값과 같은 값을 가지는 요소를 컨테이너에서 모두 삭제  
+2. splice_after() : 해당 요소를 원본 순방향 리스트에서 삭제하고, 대상 순방향 리스트의 지정된 위치에 삽입  
+
+위의 예제에서 splice_after() 호출 후, 순방향 리스트 fls02에는 어떤 요소도 저장되어 있지 않게 된다.  
 
 
 ### 연관 컨테이너 (associative container)  
@@ -78,5 +177,6 @@ copy(vc.begin(), vc.end(), ostream_iterator<int>(cout, " "));
 
 ## 알고리즘 (algorithm)  
 자료구조에 관련된 알고리즘을 컨테이너가 메소드로 제공  
+
 
 
