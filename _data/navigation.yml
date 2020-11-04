@@ -1,0 +1,145 @@
+header:
+  - titles:
+      # @start locale config
+      en      : &EN       Daily
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hans : &ZH_HANS  归档
+      zh      : *ZH_HANS
+      zh-CN   : *ZH_HANS
+      zh-SG   : *ZH_HANS
+      zh-Hant : &ZH_HANT  歸檔
+      zh-TW   : *ZH_HANT
+      zh-HK   : *ZH_HANT
+      ko      : &KO       일상
+      ko-KR   : *KO
+      # @end locale config
+    url: /
+
+  - titles:
+      # @start locale config
+      en      : &EN       Docs
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hans : &ZH_HANS  Docs
+      zh      : *ZH_HANS
+      zh-CN   : *ZH_HANS
+      zh-SG   : *ZH_HANS
+      zh-Hant : &ZH_HANT  Docs
+      zh-TW   : *ZH_HANT
+      zh-HK   : *ZH_HANT
+      ko      : &KO       문서
+      ko-KR   : *KO
+      # @end locale config
+    url: /language/c
+  
+  - titles:
+      # @start locale config
+      en      : &EN       Tag
+      en-GB   : *EN
+      en-US   : *EN
+      en-CA   : *EN
+      en-AU   : *EN
+      zh-Hans : &ZH_HANS  关于
+      zh      : *ZH_HANS
+      zh-CN   : *ZH_HANS
+      zh-SG   : *ZH_HANS
+      zh-Hant : &ZH_HANT  關於
+      zh-TW   : *ZH_HANT
+      zh-HK   : *ZH_HANT
+      ko      : &KO       태그
+      ko-KR   : *KO
+      # @end locale config
+    url: /tags.html
+
+daily:
+  - title:      Minji Kim
+    children:
+      - title:  소개
+        url:    /
+      - title:  Today I Learned
+        url:    /TIL/TIL
+
+TIL:
+  - title:      Minji Kim
+    children:
+      - title:  소개
+        url:    /
+      - title:  Today I Learned
+        url:    /TIL/TIL
+  - title:  2020년
+    children:
+      - title: 09월
+        url:  /TIL/september-2020
+      - title: 10월
+        url:  /TIL/october-2020
+
+language-c:
+  - title: C/C++
+    children:
+    - title:  입력함수
+      url:    /language/c
+  - title:  JavaScript
+    url:    /language/javascript
+  - title: algorithm
+    children:
+      - title: 개요
+        url:   /docs/algorithm
+      - title: 정렬
+        url:   /docs/algorithm
+  - title:  linux
+    children:
+      # 명령어 누르면 다양한 명령어 나오는.. 메뉴...
+      - title: 강제 종료 및 재부팅
+        url: /docs/linux
+      - title: File & Directory 명령어
+        url: /docs/linux
+      - title: SSH KEY
+        url: /docs/linux
+  - title:  git
+    children:
+      - title: 충돌 해결
+        url:    /docs/git
+      - title: 변경 내용 되돌리기
+
+language:
+  - title: LANGUAGE
+    children:
+    - title:  C
+      url:    /language/c
+    - title:  C++
+      url:    /language/cpp
+    - title:  JavaScript
+      url:    /language/javascript
+  - title: algorithm
+    url:    /docs/algorithm
+  - title:  linux
+    url:    /docs/linux
+  - title:  git
+    url:    /docs/git
+  - title: C
+    children:
+      - title: 입력함수
+        url:   /language/c/input
+
+computer:
+  - title:      PROGRAMMING
+    children:
+      - title:  LANGUAGE
+        children:
+        - title:  C
+          url:    /language/c
+        - title:  C++
+          url:    /language/cpp
+        - title:  JavaScript
+          url:    /language/javascript
+      - title:    algorithm
+        url:      docs/algorithm
+      - title:    linux
+        url:      /docs/linux
+      - title:    git
+        url:      /docs/git

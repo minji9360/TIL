@@ -1,0 +1,74 @@
+///
+// Skin: Forest
+// Author: Tian Qi
+// Email: kitian616@outlook.com
+///
+
+// main colors
+$main-color-1:     #67992b; // 선택된 색상(네비게이션, 메뉴)
+$text-color-1:     #fff;
+
+$main-color-2:     #427307; // 사용 x
+$text-color-2:     #fff;
+
+$main-color-3:     #eef7dc; // 태그, search 버튼 배경색
+$text-color-3:     #789c67; // 태그, search 버튼 내 글자색
+
+$main-color-theme-light: rgba(#000, .9);
+$main-color-theme-dark:  rgba(#fff, .9);
+
+// page background
+$background-color: #fff;
+
+// text colors
+$text-color-theme-light-d: #4a543e; // 블로그 글 본문 # 걸린 굵은 글자색
+$text-color-theme-light:  rgba(#000, .65);
+$text-color-theme-light-l: rgba(#000, .5);
+
+$text-color-theme-dark-d:  #fff;
+$text-color-theme-dark:    rgba(#fff, .95);
+$text-color-theme-dark-l:  rgba(#fff, .85);
+
+$text-color-d:     $text-color-theme-light-d;
+$text-color:       $text-color-theme-light;
+$text-color-l:     $text-color-theme-light-l;
+
+$text-background-color: rgba(#000, .05);
+
+// header and footer colors
+$header-text-color: $text-color-1;
+$header-background: linear-gradient(60deg, #77bf50 0%, #c1e359 100%);
+
+$footer-text-color: $text-color-1;
+$footer-background: linear-gradient(60deg, #77bf50 0%, #c1e359 100%);
+
+// border and shadow colors
+$border-color:     #bfbfbf;
+$border-color-l:   mix(#000, $background-color, 10%);
+$decorate-color:   rgba(#bb6170, .15);
+$mask-color:       rgba(#000, .9);
+$select-color:     rgba(#e8f7b5, 0.8);
+
+// function colors
+$green:           #52c41a;
+$blue:            #1890ff;
+$yellow:          #c1e359;
+$red:             #f5222d;
+$text-color-function: #fff;
+
+// logo colors
+$mail-color:       #0072c5;
+$facebook-color:   #4267b2;
+$twitter-color:    #1da1f2;
+$weibo-color:      #e6162d;
+$google-plus-color:#ea4335;
+$telegram-color:   #32afed;
+$medium-color:     #000;
+$zhihu-color:      #0084ff;
+$douban-color:     #42bd56;
+$linkedin-color:   #1074af;
+$github-color:     #000;
+$npm-color:        #fff;
+
+// highlight colors
+@import "skins/highlight/tomorrow";
