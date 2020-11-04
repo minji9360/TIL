@@ -35,7 +35,7 @@ header:
       ko      : &KO       문서
       ko-KR   : *KO
       # @end locale config
-    url: /language/c
+    url: /language
   
   - titles:
       # @start locale config
@@ -77,6 +77,8 @@ TIL:
         url:  /TIL/september-2020
       - title: 10월
         url:  /TIL/october-2020
+      - title: 11월
+        url:  /TIL/november-2020
 
 language-c:
   - title: C/C++
@@ -106,40 +108,143 @@ language-c:
         url:    /docs/git
       - title: 변경 내용 되돌리기
 
-language:
-  - title: LANGUAGE
+language-c:
+  - title: 언어
     children:
-    - title:  C
-      url:    /language/c
-    - title:  C++
-      url:    /language/cpp
+    - title:  C/C++
+      url:    /language/
     - title:  JavaScript
       url:    /language/javascript
-  - title: algorithm
-    url:    /docs/algorithm
+    - title:  Python
+      url:    /language/python
+  - title: 알고리즘
+    children:
+    - title:  개념
+      url:    /algorithm/basic
+      #- title:  문제 풀이
+      #  url:    /algorithm/problem
+      #- title:  Codeup
+      #  url:    /algorithm/codeup
+      #- title:  Baekjoon
+      #  url:    /algorithm/baekjoon
+        #- title:  Programmers
+        #  url:    /algorithm/programmers
+  - title:  컴퓨터 사이언스
+    children:
+      - title:  정보처리산업기사 준비
+        url:    /computer-science
+        #- title:  자료구조
+        #url:    /computer-science/dadta-structure
   - title:  linux
     url:    /docs/linux
   - title:  git
     url:    /docs/git
-  - title: C
-    children:
-      - title: 입력함수
-        url:   /language/c/input
+    #- title: 🌳
+    #children:
+    #  - title: 입력함수
+    #    url:   /language/c/input
 
-computer:
-  - title:      PROGRAMMING
+language-js:
+  - title: 언어
     children:
-      - title:  LANGUAGE
-        children:
-        - title:  C
-          url:    /language/c
-        - title:  C++
-          url:    /language/cpp
-        - title:  JavaScript
-          url:    /language/javascript
-      - title:    algorithm
-        url:      docs/algorithm
-      - title:    linux
-        url:      /docs/linux
-      - title:    git
-        url:      /docs/git
+    - title:  C/C++
+      url:    /language/
+    - title:  JavaScript
+      url:    /language/javascript
+    - title:  Python
+      url:    /language/python
+  - title: 알고리즘
+    children:
+    - title:  개념
+      url:    /algorithm/basic
+      #- title:  문제 풀이
+      #  url:    /algorithm/problem
+      #- title:  Codeup
+      #  url:    /algorithm/codeup
+      #- title:  Baekjoon
+      #  url:    /algorithm/baekjoon
+        #- title:  Programmers
+        #  url:    /algorithm/programmers
+  - title:  컴퓨터 사이언스
+    children:
+      - title:  정보처리산업기사 준비
+        url:    /computer-science
+        #- title:  자료구조
+        #url:    /computer-science/dadta-structure
+  - title:  linux
+    url:    /docs/linux
+  - title:  git
+    url:    /docs/git
+
+language-ps:
+  - title: 언어
+    children:
+    - title:  C/C++
+      url:    /language/
+    - title:  JavaScript
+      url:    /language/javascript
+    - title:  Python
+      url:    /language/python
+  - title: 알고리즘
+    children:
+    - title:  개요
+      url:    /algorithm/basic
+      #- title:  문제 풀이
+      #  url:    /algorithm/problem
+      #- title:  Codeup
+      #  url:    /algorithm/codeup
+      #- title:  Baekjoon
+      #  url:    /algorithm/baekjoon
+        #- title:  Programmers
+        #  url:    /algorithm/programmers
+  - title:  컴퓨터 사이언스
+    children:
+      - title:  정보처리산업기사 준비
+        url:    /computer-science
+        #- title:  자료구조
+        #url:    /computer-science/dadta-structure
+  - title:  linux
+    url:    /docs/linux
+  - title:  git
+    url:    /docs/git
+  - title:  🌱
+    children:
+      - title:  정렬
+        url:    /algorithm/sort
+
+language-cs:
+  - title: 언어
+    children:
+    - title:  C/C++
+      url:    /language/
+    - title:  JavaScript
+      url:    /language/javascript
+    - title:  Python
+      url:    /language/python
+  - title: 알고리즘
+    children:
+    - title:  개념
+      url:    /algorithm/basic
+      #- title:  문제 풀이
+      #  url:    /algorithm/problem
+  - title:  컴퓨터 사이언스
+    children:
+      - title:  정보처리산업기사 준비
+        url:    /computer-science
+  - title:  linux
+    url:    /docs/linux
+  - title:  git
+    url:    /docs/git
+  - title: 🌳
+    children:
+      - title:  컴퓨터 구조
+        url:    /computer-science/
+      - title:  컴퓨터 개념
+        url:    /computer-science/computer-concepts
+      - title:  진법과 보수
+        url:    /computer-science/base-complement
+      - title:  자료
+        url:    /computer-science/data
+      - title:  정보전략계획수립
+        url:    /computer-science/business-process
+

@@ -1,13 +1,15 @@
 ---
 layout: article
-title: C
-permalink: /language/c
+title: JavaScript
+permalink: /language/javascript
 key: docs-test
 tags: docs
 
 aside:
   toc: true
 sidebar:
-  nav: language-c
+  nav: language-js
 license: false
 ---
+<!--more-->
+
