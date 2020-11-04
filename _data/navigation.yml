@@ -119,16 +119,12 @@ language-c:
       url:    /language/python
   - title: 알고리즘
     children:
-    - title:  개념
-      url:    /algorithm/basic
-      #- title:  문제 풀이
-      #  url:    /algorithm/problem
-      #- title:  Codeup
-      #  url:    /algorithm/codeup
-      #- title:  Baekjoon
-      #  url:    /algorithm/baekjoon
-        #- title:  Programmers
-        #  url:    /algorithm/programmers
+    - title:  개요
+      url:    /algorithm/basic  
+    - title:  종류
+      url:    /algorithm/kind
+    - title:  문제 풀이
+      url:    /algorithm/solve
   - title:  컴퓨터 사이언스
     children:
       - title:  정보처리산업기사 준비
@@ -155,16 +151,12 @@ language-js:
       url:    /language/python
   - title: 알고리즘
     children:
-    - title:  개념
+    - title:  개요
       url:    /algorithm/basic
-      #- title:  문제 풀이
-      #  url:    /algorithm/problem
-      #- title:  Codeup
-      #  url:    /algorithm/codeup
-      #- title:  Baekjoon
-      #  url:    /algorithm/baekjoon
-        #- title:  Programmers
-        #  url:    /algorithm/programmers
+    - title:  종류
+      url:    /algorithm/kind
+    - title:  문제 풀이
+      url:    /algorithm/solve
   - title:  컴퓨터 사이언스
     children:
       - title:  정보처리산업기사 준비
@@ -176,7 +168,7 @@ language-js:
   - title:  git
     url:    /docs/git
 
-language-ps:
+language-py:
   - title: 언어
     children:
     - title:  C/C++
@@ -188,15 +180,11 @@ language-ps:
   - title: 알고리즘
     children:
     - title:  개요
-      url:    /algorithm/basic
-      #- title:  문제 풀이
-      #  url:    /algorithm/problem
-      #- title:  Codeup
-      #  url:    /algorithm/codeup
-      #- title:  Baekjoon
-      #  url:    /algorithm/baekjoon
-        #- title:  Programmers
-        #  url:    /algorithm/programmers
+      url:    /algorithm/basic  
+    - title:  종류
+      url:    /algorithm/kind
+    - title:  문제 풀이
+      url:    /algorithm/solve
   - title:  컴퓨터 사이언스
     children:
       - title:  정보처리산업기사 준비
@@ -207,7 +195,103 @@ language-ps:
     url:    /docs/linux
   - title:  git
     url:    /docs/git
-  - title:  🌱
+  - title: 🌳_🌲_🌳_🌲_🌳_🌲_🌳_🌲
+    children:
+      - title:  오류
+        url:    /python/error
+
+language-algorithm:
+  - title: 언어
+    children:
+    - title:  C/C++
+      url:    /language/
+    - title:  JavaScript
+      url:    /language/javascript
+    - title:  Python
+      url:    /language/python
+  - title: 알고리즘
+    children:
+    - title:  개요
+      url:    /algorithm/basic  
+    - title:  종류
+      url:    /algorithm/kind
+    - title:  문제 풀이
+      url:    /algorithm/solve
+  - title:  컴퓨터 사이언스
+    children:
+      - title:  정보처리산업기사 준비
+        url:    /computer-science
+        #- title:  자료구조
+        #url:    /computer-science/dadta-structure
+  - title:  linux
+    url:    /docs/linux
+  - title:  git
+    url:    /docs/git
+
+language-algorithm-ps:
+  - title: 언어
+    children:
+    - title:  C/C++
+      url:    /language/
+    - title:  JavaScript
+      url:    /language/javascript
+    - title:  Python
+      url:    /language/python
+  - title: 알고리즘
+    children:
+    - title:  개요
+      url:    /algorithm/basic  
+    - title:  종류
+      url:    /algorithm/kind
+    - title:  문제 풀이
+      url:    /algorithm/solve
+  - title:  컴퓨터 사이언스
+    children:
+      - title:  정보처리산업기사 준비
+        url:    /computer-science
+        #- title:  자료구조
+        #url:    /computer-science/dadta-structure
+  - title:  linux
+    url:    /docs/linux
+  - title:  git
+    url:    /docs/git
+  - title: 🌳_🌲_🌳_🌲_🌳_🌲_🌳_🌲
+    children:
+      - title:  Codeup
+        url:    /algorithm/codeup
+      - title:  Baekjoon
+        url:    /algorithm/baekjoon
+        #- title:  Programmers
+        #url:    /algorithm/programmers
+
+language-algorithm-kind:
+  - title: 언어
+    children:
+    - title:  C/C++
+      url:    /language/
+    - title:  JavaScript
+      url:    /language/javascript
+    - title:  Python
+      url:    /language/python
+  - title: 알고리즘
+    children:
+    - title:  개요
+      url:    /algorithm/basic  
+    - title:  종류
+      url:    /algorithm/kind
+    - title:  문제 풀이
+      url:    /algorithm/solve
+  - title:  컴퓨터 사이언스
+    children:
+      - title:  정보처리산업기사 준비
+        url:    /computer-science
+        #- title:  자료구조
+        #url:    /computer-science/dadta-structure
+  - title:  linux
+    url:    /docs/linux
+  - title:  git
+    url:    /docs/git
+  - title: 🌳_🌲_🌳_🌲_🌳_🌲_🌳_🌲
     children:
       - title:  정렬
         url:    /algorithm/sort
@@ -223,10 +307,12 @@ language-cs:
       url:    /language/python
   - title: 알고리즘
     children:
-    - title:  개념
-      url:    /algorithm/basic
-      #- title:  문제 풀이
-      #  url:    /algorithm/problem
+    - title:  개요
+      url:    /algorithm/basic  
+    - title:  종류
+      url:    /algorithm/kind
+    - title:  문제 풀이
+      url:    /algorithm/solve
   - title:  컴퓨터 사이언스
     children:
       - title:  정보처리산업기사 준비
