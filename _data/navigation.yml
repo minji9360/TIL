@@ -135,10 +135,12 @@ language-c:
     url:    /docs/linux
   - title:  git
     url:    /docs/git
-    #- title: 🌳
-    #children:
-    #  - title: 입력함수
-    #    url:   /language/c/input
+  - title: 🌳 C/C++ 🌲
+    children:
+      - title:  함수
+        url:    /language/function
+      - title:  C++ STL
+        url:    /language/stl
 
 language-js:
   - title: 언어
@@ -195,7 +197,7 @@ language-py:
     url:    /docs/linux
   - title:  git
     url:    /docs/git
-  - title: 🌳_🌲_🌳_🌲_🌳_🌲_🌳_🌲
+  - title: 🌳 Python 🌲
     children:
       - title:  오류
         url:    /python/error
@@ -255,7 +257,7 @@ language-algorithm-ps:
     url:    /docs/linux
   - title:  git
     url:    /docs/git
-  - title: 🌳_🌲_🌳_🌲_🌳_🌲_🌳_🌲
+  - title: 🌳 문제 풀이 🌲
     children:
       - title:  Codeup
         url:    /algorithm/codeup
@@ -291,7 +293,7 @@ language-algorithm-kind:
     url:    /docs/linux
   - title:  git
     url:    /docs/git
-  - title: 🌳_🌲_🌳_🌲_🌳_🌲_🌳_🌲
+  - title: 🌳 종류 🌲
     children:
       - title:  정렬
         url:    /algorithm/sort
@@ -321,16 +323,18 @@ language-cs:
     url:    /docs/linux
   - title:  git
     url:    /docs/git
-  - title: 🌳
+  - title: 🌳 정보처리산업기사 준비
     children:
       - title:  컴퓨터 구조
         url:    /computer-science/
+      - title:  자료
+        url:    /computer-science/data
+      - title:  데이터베이스
+        url:    /computer-science/database
       - title:  컴퓨터 개념
         url:    /computer-science/computer-concepts
       - title:  진법과 보수
         url:    /computer-science/base-complement
-      - title:  자료
-        url:    /computer-science/data
       - title:  정보전략계획수립
         url:    /computer-science/business-process
 
