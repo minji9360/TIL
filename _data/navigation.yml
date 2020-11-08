@@ -80,6 +80,40 @@ TIL:
       - title: 11월
         url:  /TIL/november-2020
 
+docs:
+  - title: 언어
+    children:
+    - title:  C
+      url:    /language/
+    - title:  C++
+      url:    /language/cpp
+    - title:  JavaScript
+      url:    /language/javascript
+    - title:  Python
+      url:    /language/python
+  - title: 알고리즘
+    children:
+    - title:  개요
+      url:    /algorithm/basic  
+    - title:  종류
+      url:    /algorithm/kind
+    - title:  문제 풀이
+      url:    /algorithm/solve
+  - title:  컴퓨터 사이언스
+    children:
+      - title:  정보처리산업기사 준비
+        url:    /computer-science
+        #- title:  자료구조
+        #url:    /computer-science/dadta-structure
+  - title:  linux
+    children:
+      - title: 명령어
+        url: /linux
+      - title: SSH KEY
+        url: /linux/ssh
+  - title:  git
+    url:    /docs/git
+
 language-c:
   - title: C/C++
     children:
@@ -111,8 +145,10 @@ language-c:
 language-c:
   - title: 언어
     children:
-    - title:  C/C++
+    - title:  C
       url:    /language/
+    - title:  C++
+      url:    /language/cpp
     - title:  JavaScript
       url:    /language/javascript
     - title:  Python
@@ -132,21 +168,65 @@ language-c:
         #- title:  자료구조
         #url:    /computer-science/dadta-structure
   - title:  linux
-    url:    /docs/linux
+    children:
+      - title: 명령어
+        url: /linux
+      - title: SSH KEY
+        url: /linux/ssh
   - title:  git
     url:    /docs/git
-  - title: 🌳 C/C++ 🌲
+  - title: 🌳 C 🌲
     children:
       - title:  함수
-        url:    /language/function
-      - title:  C++ STL
-        url:    /language/stl
+        url:    /c/function
+
+language-cpp:
+  - title: 언어
+    children:
+    - title:  C
+      url:    /language/
+    - title:  C++
+      url:    /language/cpp
+    - title:  JavaScript
+      url:    /language/javascript
+    - title:  Python
+      url:    /language/python
+  - title: 알고리즘
+    children:
+    - title:  개요
+      url:    /algorithm/basic  
+    - title:  종류
+      url:    /algorithm/kind
+    - title:  문제 풀이
+      url:    /algorithm/solve
+  - title:  컴퓨터 사이언스
+    children:
+      - title:  정보처리산업기사 준비
+        url:    /computer-science
+        #- title:  자료구조
+        #url:    /computer-science/dadta-structure
+  - title:  linux
+    children:
+      - title: 명령어
+        url: /linux
+      - title: SSH KEY
+        url: /linux/ssh
+  - title:  git
+    url:    /docs/git
+  - title: 🌳 C++ 🌲
+    children:
+      - title:  기본
+        url:    /cpp/basic
+      - title:  STL
+        url:    /cpp/stl
 
 language-js:
   - title: 언어
     children:
-    - title:  C/C++
+    - title:  C
       url:    /language/
+    - title:  C++
+      url:    /language/cpp
     - title:  JavaScript
       url:    /language/javascript
     - title:  Python
@@ -166,15 +246,29 @@ language-js:
         #- title:  자료구조
         #url:    /computer-science/dadta-structure
   - title:  linux
-    url:    /docs/linux
+    children:
+      - title: 명령어
+        url: /linux
+      - title: SSH KEY
+        url: /linux/ssh
   - title:  git
     url:    /docs/git
+  - title: 🌳 JavaScript 🌲
+    children:
+      - title:  정규식
+        url:    /javascript/regex
+      - title:  오류
+        url:    /javascript/error
+      - title:  NodeJS 오류
+        url:    /nodejs/error
 
 language-py:
   - title: 언어
     children:
-    - title:  C/C++
+    - title:  C
       url:    /language/
+    - title:  C++
+      url:    /language/cpp
     - title:  JavaScript
       url:    /language/javascript
     - title:  Python
@@ -194,47 +288,27 @@ language-py:
         #- title:  자료구조
         #url:    /computer-science/dadta-structure
   - title:  linux
-    url:    /docs/linux
+    children:
+      - title: 명령어
+        url: /linux
+      - title: SSH KEY
+        url: /linux/ssh
   - title:  git
     url:    /docs/git
   - title: 🌳 Python 🌲
     children:
+      - title:  시작
+        url:    /python/start
       - title:  오류
         url:    /python/error
-
-language-algorithm:
-  - title: 언어
-    children:
-    - title:  C/C++
-      url:    /language/
-    - title:  JavaScript
-      url:    /language/javascript
-    - title:  Python
-      url:    /language/python
-  - title: 알고리즘
-    children:
-    - title:  개요
-      url:    /algorithm/basic  
-    - title:  종류
-      url:    /algorithm/kind
-    - title:  문제 풀이
-      url:    /algorithm/solve
-  - title:  컴퓨터 사이언스
-    children:
-      - title:  정보처리산업기사 준비
-        url:    /computer-science
-        #- title:  자료구조
-        #url:    /computer-science/dadta-structure
-  - title:  linux
-    url:    /docs/linux
-  - title:  git
-    url:    /docs/git
 
 language-algorithm-ps:
   - title: 언어
     children:
-    - title:  C/C++
+    - title:  C
       url:    /language/
+    - title:  C++
+      url:    /language/cpp
     - title:  JavaScript
       url:    /language/javascript
     - title:  Python
@@ -254,7 +328,11 @@ language-algorithm-ps:
         #- title:  자료구조
         #url:    /computer-science/dadta-structure
   - title:  linux
-    url:    /docs/linux
+    children:
+      - title: 명령어
+        url: /linux
+      - title: SSH KEY
+        url: /linux/ssh
   - title:  git
     url:    /docs/git
   - title: 🌳 문제 풀이 🌲
@@ -269,8 +347,10 @@ language-algorithm-ps:
 language-algorithm-kind:
   - title: 언어
     children:
-    - title:  C/C++
+    - title:  C
       url:    /language/
+    - title:  C++
+      url:    /language/cpp
     - title:  JavaScript
       url:    /language/javascript
     - title:  Python
@@ -290,7 +370,11 @@ language-algorithm-kind:
         #- title:  자료구조
         #url:    /computer-science/dadta-structure
   - title:  linux
-    url:    /docs/linux
+    children:
+      - title: 명령어
+        url: /linux
+      - title: SSH KEY
+        url: /linux/ssh
   - title:  git
     url:    /docs/git
   - title: 🌳 종류 🌲
@@ -301,8 +385,10 @@ language-algorithm-kind:
 language-cs:
   - title: 언어
     children:
-    - title:  C/C++
+    - title:  C
       url:    /language/
+    - title:  C++
+      url:    /language/cpp
     - title:  JavaScript
       url:    /language/javascript
     - title:  Python
@@ -320,7 +406,11 @@ language-cs:
       - title:  정보처리산업기사 준비
         url:    /computer-science
   - title:  linux
-    url:    /docs/linux
+    children:
+      - title: 명령어
+        url: /linux
+      - title: SSH KEY
+        url: /linux/ssh
   - title:  git
     url:    /docs/git
   - title: 🌳 정보처리산업기사 준비
