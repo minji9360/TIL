@@ -32,10 +32,10 @@ header:
       zh-Hant : &ZH_HANT  Docs
       zh-TW   : *ZH_HANT
       zh-HK   : *ZH_HANT
-      ko      : &KO       문서
+      ko      : &KO       공부
       ko-KR   : *KO
       # @end locale config
-    url: /language
+    url: /study
   
   - titles:
       # @start locale config
@@ -62,7 +62,7 @@ daily:
       - title:  소개
         url:    /
       - title:  Today I Learned
-        url:    /TIL/TIL
+        url:    /TIL
 
 TIL:
   - title:      Minji Kim
@@ -70,7 +70,7 @@ TIL:
       - title:  소개
         url:    /
       - title:  Today I Learned
-        url:    /TIL/TIL
+        url:    /TIL
   - title:  2020년
     children:
       - title: 09월
@@ -112,7 +112,11 @@ docs:
       - title: SSH KEY
         url: /linux/ssh
   - title:  git
-    url:    /docs/git
+    children:
+      - title: 명령어
+        url:  /git
+      - title: 오류
+        url:  /git/error
 
 language-c:
   - title: C/C++
@@ -138,9 +142,10 @@ language-c:
         url: /docs/linux
   - title:  git
     children:
-      - title: 충돌 해결
-        url:    /docs/git
-      - title: 변경 내용 되돌리기
+      - title: 명령어
+        url:  /git
+      - title: 오류
+        url:  /git/error
 
 language-c:
   - title: 언어
@@ -174,7 +179,11 @@ language-c:
       - title: SSH KEY
         url: /linux/ssh
   - title:  git
-    url:    /docs/git
+    children:
+      - title: 명령어
+        url:  /git
+      - title: 오류
+        url:  /git/error
   - title: 🌳 C 🌲
     children:
       - title:  함수
@@ -212,7 +221,11 @@ language-cpp:
       - title: SSH KEY
         url: /linux/ssh
   - title:  git
-    url:    /docs/git
+    children:
+      - title: 명령어
+        url:  /git
+      - title: 오류
+        url:  /git/error
   - title: 🌳 C++ 🌲
     children:
       - title:  기본
@@ -252,7 +265,11 @@ language-js:
       - title: SSH KEY
         url: /linux/ssh
   - title:  git
-    url:    /docs/git
+    children:
+      - title: 명령어
+        url:  /git
+      - title: 오류
+        url:  /git/error
   - title: 🌳 JavaScript 🌲
     children:
       - title:  정규식
@@ -294,7 +311,11 @@ language-py:
       - title: SSH KEY
         url: /linux/ssh
   - title:  git
-    url:    /docs/git
+    children:
+      - title: 명령어
+        url:  /git
+      - title: 오류
+        url:  /git/error
   - title: 🌳 Python 🌲
     children:
       - title:  시작
@@ -334,7 +355,11 @@ language-algorithm-ps:
       - title: SSH KEY
         url: /linux/ssh
   - title:  git
-    url:    /docs/git
+    children:
+      - title: 명령어
+        url:  /git
+      - title: 오류
+        url:  /git/error
   - title: 🌳 문제 풀이 🌲
     children:
       - title:  Codeup
@@ -376,7 +401,11 @@ language-algorithm-kind:
       - title: SSH KEY
         url: /linux/ssh
   - title:  git
-    url:    /docs/git
+    children:
+      - title: 명령어
+        url:  /git
+      - title: 오류
+        url:  /git/error
   - title: 🌳 종류 🌲
     children:
       - title:  정렬
@@ -412,7 +441,11 @@ language-cs:
       - title: SSH KEY
         url: /linux/ssh
   - title:  git
-    url:    /docs/git
+    children:
+      - title: 명령어
+        url:  /git
+      - title: 오류
+        url:  /git/error
   - title: 🌳 정보처리산업기사 준비
     children:
       - title:  컴퓨터 구조
