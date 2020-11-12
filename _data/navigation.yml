@@ -62,7 +62,7 @@ daily:
       - title:  소개
         url:    /
       - title:  Today I Learned
-        url:    /TIL
+        url:    /TIL/intro
 
 TIL:
   - title:      Minji Kim
@@ -70,7 +70,7 @@ TIL:
       - title:  소개
         url:    /
       - title:  Today I Learned
-        url:    /TIL
+        url:    /TIL/intro
   - title:  2020년
     children:
       - title: 09월
