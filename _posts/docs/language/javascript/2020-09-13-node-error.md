@@ -137,6 +137,33 @@ delete 기능 할 때인가 그 때도 삭제 버튼 눌렀을 때 해당 오류
 #### 해결  
 id에 대해 변수명 수정
 
+## SyntaxError  
+### Cannot use import statement outside a module  
+```
+(node:26820) Warning: To load an ES module, set "type": "module" in the package.json or use the .mjs extension.
+C:\Users\MINJI\Desktop\greenday\index.js:1
+import express from "express";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at wrapSafe (internal/modules/cjs/loader.js:1053:16)
+    at Module._compile (internal/modules/cjs/loader.js:1101:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+    at Module.load (internal/modules/cjs/loader.js:985:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:878:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)
+    at internal/main/run_main_module.js:17:47
+[nodemon] app crashed - waiting for file changes before starting...
+```
+
+#### 상황  
+프로젝트를 시작하기 위해 npm으로 필요한 패키지(express, babel, nodemon 등)를 설치했다.  
+index.js에 express를 import한 후 서버를 구동했더니 해당 오류가 발생했다.  
+
+#### 해결  
+__package.json에 "type": "module"을 추가__
+pacakge.json에 "type" 필드에 별도의 값이 없으면 기본 모듈(commonjs)로 사용하기 때문이다.  
+
 # 그 외
 ## babel  
 ### Requires Babel "버전", but was loaded with "버전"  
